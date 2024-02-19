@@ -42,7 +42,7 @@ h4 {
     /* End of Hero Section */
   }
   .container header {
-    background-color: blue;
+    background-color: transparent;
     padding: 0.75em 0em;
     position: fixed;
     top: 0;
