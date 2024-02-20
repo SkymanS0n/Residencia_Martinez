@@ -23,24 +23,24 @@
                     <nav class = "slide-menu">
                         <div class="my-address">
                             <div class="my-avatar">
-                                <img src="images/profile-photo-3.png" alt="Jerico's professional profile photo thumbnail">
+                                <img src="images/profile_image_placeholder.png" alt="empty image placeholder">
                             </div>
                             <div class="my-location">
-                                <p>Jerico C. Eijansantos</p>
-                                <p aria-label="Jerico's mailing address. Mati City, Philippines">Mati City, Philippines</p>
+                                <p>Hello there!</p>
+                                <p>Visitor</p>
                             </div>
                         </div>
                         <ul class = "nav-bar-links">
-                            <li><a href="https://skymans0n.notion.site/My-Web-Development-Journey-6e979fca1455470f8a4ec24f5e71b810?pvs=4" aria-label="Blog. Select to read Jerico's blog" class="menu-link">Blog</a></li>
-                            <li><a href="https://github.com/SkymanS0n" class="menu-link" aria-label="GitHub. Select to inspect Jerico's online repositories">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/jerico-eijansantos/" class="menu-link" aria-label="LinkedIn. Select to view Jerico's profile on LinkedIn">LinkedIn</a></li>
-                            <li><a href="https://drive.google.com/file/d/1-MSgQA9GisDxS7wqudNKQwvUlcKNErqS/view?usp=sharing" class="menu-link" aria-label="Resume. Select to view Jerico's technical resume.">Resume</a></li>
-                            <button class="menu-send-message" onclick="location. href='mailto:jerico@developer.com?subject=Inquiry'" aria-label="Tap to select and contact Jerico to hire him.">Hire this guy!
+                            <li><a href="mailto:jerico@developer.com?subject=Inquiry" class="menu-link">Message Us</a></li>
+                            <li><a href="#" class="menu-link">Schedule Visit</a></li>
+                            <li><a href="#" class="menu-link">Requirements</a></li>
+                            <li><a href="#" class="menu-link">Apply Now</a></li>
+                            <button class="menu-send-message" onclick="location. href='#'" aria-label="Tap to login.">Login
                             </button>
                             <div class="mobile-footer">
                                 <div class="legal-regulations">
                                     <a href="#">Terms & Conditions</a>
-                                    <p aria-label="copyright 2024, Jerico Eijansantos, all rights reserved.">© 2024 Jerico Eijansantos | <span>All rights reserved</span></p>
+                                    <p aria-label="copyright 2024, Residencia Martinez, all rights reserved.">© 2024 Residencia Martinez | <span>All rights reserved</span></p>
                                 </div>
                             </div>
                         </ul>
@@ -51,31 +51,47 @@
                 <section class="hero-section"> <!-- Start of Hero-Section -->
                     <div class="hero-container">
                         <div class="hero-details">
-                            <!--<p>Hello there! I'm <span>Jerico</span>&#x1F44B;</p>-->
                             <h1>The place is right here <span></span></h1>
                             <h2>Welcome to Residencia Martinez, we offer the ultimate boarding experience for college women.</h2>
                             <div class="buttons">
-                                <button class="view-work" onclick="location.href= '#projects' ">
+                                <button class="view-work" onclick="location.href= 'mailto:jerico@developer.com?subject=Inquiry' ">
                                     Inquire Now
-                                </button>
-                                <button class="about-me" onclick="location.href= '#aboutmyself' ">
-                                    More about me
                                 </button>
                             </div>
                         </div>
                         <div class="hero-img">
-                            <img src="images/hero_section_background.png" alt="Jerico's professional profile photo">
-                        </div>
-                        <div id = "buttons2" class="buttons">
-                            <button class="view-work" onclick="location.href= '#projects' ">
-                                View my work
-                            </button>
-                            <button class="about-me" onclick="location.href= '#aboutmyself' ">
-                                More about me
-                            </button>
+                            <img src="images/hero_section_background.png" alt="An image of a college woman smiling, with her backpack on her back and holding her books photo.">
                         </div>
                     </div>
                 </section> <!-- End of Hero-Section -->
+                <section class="amenities-section">
+                    <div class="amenities-container">
+                        <h3>Cozy Rooms, Connected Living, and Secure Spaces</h3>
+                        <div class="image-container" id="carousel">
+                            <img src="images/amenities_a.png" alt="picture of the room showing the bed and table and chair.">
+                            <img src="images/amenities_b.png" alt="picture of the room showing the bed and table and chair and toilet">
+                        </div>
+                        <p>Each room in our boarding house comfortably accommodates four students with bunk beds, wardrobes, a spacious desk, and chairs. Enjoy the luxury of private toilets and bathrooms in every room, ensuring convenience and privacy.</p>
+                        <p>No need to worry about water supply—we've got it covered. Stay connected with reliable Wi-Fi, and rest easy with CCTV cameras for security. In case of power interruptions, each room comes equipped with built-in emergency lights. Experience student living at its best – comfortable, connected, and secure!</p>
+                    </div>
+                </section>
+                <section><div class="roommate-matching-section">
+                    <div class="roomate-matching-container">
+                        <h4>Roommate Match</h4>
+                        <p>For students seeking compatible living arrangements.</p>
+                        <div class="roommate-matching-form">
+                            <form action="https://formspree.io/f/xjvnygvp" method="POST">
+                                <label for="course">Course:</label>
+                                <input type="text" id="course" placeholder="BS Nursing" required>
+                                <label for="age">Age:</label>
+                                <input type="number" id="age" placeholder="18" required>
+                                <label for="color">Favorite Color:</label>
+                                <input type="text" id="color" placeholder="pink" required>
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div></section>
             </main>
         </div>
     </body>
