@@ -383,7 +383,7 @@ h4 {
   }
   .container .amenities-section .amenities-container h3 {
     padding: 0.855em 5% 0.855em;
-    font-size: 3.5rem;
+    font-size: 5rem;
     color: #5CE1E6;
   }
   .container .amenities-section .amenities-container .image-container {
@@ -429,7 +429,7 @@ h4 {
   .container .roommate-matching-section .roomate-matching-container .roommate-matching-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     margin-top: 1em;
   }
@@ -505,7 +505,7 @@ h4 {
     text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
     width: 10.5em;
     background-color: #FF66C4;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     margin-top: 1em;
   }
   .container .roommate-matching-section .roomate-matching-container .roommate-matching-form img {
@@ -513,7 +513,40 @@ h4 {
     height: auto;
   }
   .container .features {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: #FF66C4;
+  }
+  .container .features .features-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
     height: 100%;
     width: 90%;
+    padding: 2em 0em;
+    align-items: center;
+  }
+  .container .features .features-container .group-a, .container .features .features-container .group-b {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+  }
+  .container .features .features-container .group-a .feature-a, .container .features .features-container .group-a .feature-b, .container .features .features-container .group-a .feature-c, .container .features .features-container .group-a .feature-d, .container .features .features-container .group-b .feature-a, .container .features .features-container .group-b .feature-b, .container .features .features-container .group-b .feature-c, .container .features .features-container .group-b .feature-d {
+    padding: 1em 0.5em;
+  }
+  .container .features .features-container .group-a .feature-a img, .container .features .features-container .group-a .feature-b img, .container .features .features-container .group-a .feature-c img, .container .features .features-container .group-a .feature-d img, .container .features .features-container .group-b .feature-a img, .container .features .features-container .group-b .feature-b img, .container .features .features-container .group-b .feature-c img, .container .features .features-container .group-b .feature-d img {
+    max-width: 100px;
+    height: 100px;
+  }
+  .container .features .features-container .group-a .feature-a p, .container .features .features-container .group-a .feature-b p, .container .features .features-container .group-a .feature-c p, .container .features .features-container .group-a .feature-d p, .container .features .features-container .group-b .feature-a p, .container .features .features-container .group-b .feature-b p, .container .features .features-container .group-b .feature-c p, .container .features .features-container .group-b .feature-d p {
+    font-size: 1rem;
+    text-align: left;
+    color: #efefef;
   }
 }/*# sourceMappingURL=style.css.map */
