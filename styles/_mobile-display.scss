@@ -188,24 +188,6 @@
                             }
                             background-color: #FF66C4;
                         }
-
-                        .mobile-footer {
-                            padding: 2em 0em 0em 15%;
-                            @include alignCenter;
-                            font-size: 1.2rem;
-                            width: 85%;
-                            color: #16181a;
-                
-                            .legal-regulations {
-                                @include alignCenter;
-                                width: 100%;
-
-                                a {
-                                    width: 100%;
-                                    padding: 0em 0em 0.5em;
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -326,21 +308,22 @@
 
         .amenities-section {
             display: flex;
+            flex-direction: column;
             width: 100%;
             height: auto;
             justify-content: flex-start;
             text-align: left;
-            background-color: #FF66C4;
+            background-color: #86F1F3;
 
             .amenities-container {
-                background-color: #FF66C4;
                 width: 100%;
                 height: auto;
 
                 h3 {
-                    padding: 0.855em 5% 0.855em;
-                    font-size: 5rem;
-                    color: #5CE1E6;
+                    padding: 1.2em 5% 0.6em;
+                    font-size: 4rem;
+                    color: #16181a;
+                    text-align: center;
                 }
 
                 .image-container {
@@ -357,14 +340,70 @@
                 }
 
                 p {
-                    color: #efefef;
+                    color: #16181a;
                     padding: 2em 5% 0em;
                     font-size: 1.5rem;
                 }
 
                 p:nth-of-type(2) {
-                    padding: 2em 5% 2em;
+                    padding: 2em 5% 4em;
                     /* Add any other styles you want for the second <p> element */
+                }
+            }
+
+            .features-container {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                padding: 2em 0em;
+                align-items: center;
+
+                .group-a, .group-b {
+                    display: flex;
+                    flex-direction: row;
+                    text-align: center;
+                    justify-content: center;
+                    width: 90%;
+    
+                    .feature-a, .feature-b, .feature-c, .feature-d {
+                        margin:  1em 0.5em;
+                        background-color: #E65CE1;
+                        border-radius: 0.3em;
+    
+                        img {
+                            max-width: 100px;
+                            height: 100px;
+                            padding: 0.5em 0em 0em;
+                        }
+    
+                        p {
+                            font-size: 1rem;
+                            text-align: left;
+                            color: #16181a;
+                            padding: 1em 1em;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            .mobile-footer {
+                @include alignCenter;
+                font-size: 1.2rem;
+                color: #16181a;
+    
+                .legal-regulations {
+                    @include alignCenter;
+                    width: 100%;
+
+                    a {
+                        width: 100%;
+                        padding: 0em 0em 0.5em;
+                        @include alignCenter;
+                    }
                 }
             }
         }
@@ -374,6 +413,7 @@
         /* Start of Roommate Matching Section */
 
         .roommate-matching-section {
+            display: none;
             background-color: #5CE1E6;
             height: auto;
             width: 100%;
@@ -384,10 +424,9 @@
                 flex-direction: column;
 
                 H4 {
-                    font-size: 3.5rem;
-                    padding: 0.855em 5% 0.2em;
+                    font-size: 5rem;
+                    padding: 1.2em 5% 0.2em;
                     font-weight: 600;
-                    margin-top: 1.5em;
                 }
 
                 p {
@@ -480,48 +519,12 @@
         /* Start of Features Section */
 
         .features {
-            display: flex;
+            display: none;
             align-items: center;
             width: 100%;
             height: 100vh;
             justify-content: center;
             background-color: #FF66C4;
-
-            .features-container {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                justify-content: center;
-                height: 100%;
-                width: 90%;
-                padding: 2em 0em;
-                align-items: center;
-
-                .group-a, .group-b {
-                    display: flex;
-                    flex-direction: row;
-                    text-align: center;
-                    justify-content: center;
-                    width: 90%;
-    
-                    .feature-a, .feature-b, .feature-c, .feature-d {
-                        padding: 1em 0.5em;
-    
-                        img {
-                            max-width: 100px;
-                            height: 100px;
-                        }
-    
-                        p {
-                            font-size: 1rem;
-                            text-align: left;
-                            color: #efefef;
-                        }
-                    }
-                }
-            }
-
-            
         }
     }
 }
