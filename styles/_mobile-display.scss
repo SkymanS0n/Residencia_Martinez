@@ -367,13 +367,6 @@
                     width: 100%;
                     overflow: auto;
                     padding: 0em 3% 0em;
-
-                    .feature-a {
-                        background-image: url('images/feature-a_background.png');
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                    }
     
                     .feature-a, .feature-b, .feature-c, .feature-d {
                         display: flex;
@@ -382,6 +375,8 @@
                         margin:  0em 0.5em 0em;
                         border-radius: 0.3em;
                         padding: 0.5em;
+                        height: 260px;
+                        background-image: url('images/feature-a_background.png');
     
                         img {
                             display: flex;
