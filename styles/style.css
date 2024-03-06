@@ -401,26 +401,41 @@ h4 {
   .container .amenities-section .features-container .group-a, .container .amenities-section .features-container .group-b {
     display: flex;
     flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    width: 90%;
+    width: 100%;
+    overflow: auto;
+    padding: 0em 3% 0em;
+  }
+  .container .amenities-section .features-container .group-a .feature-a, .container .amenities-section .features-container .group-b .feature-a {
+    background-image: url("images/feature-a_background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .container .amenities-section .features-container .group-a .feature-a, .container .amenities-section .features-container .group-a .feature-b, .container .amenities-section .features-container .group-a .feature-c, .container .amenities-section .features-container .group-a .feature-d, .container .amenities-section .features-container .group-b .feature-a, .container .amenities-section .features-container .group-b .feature-b, .container .amenities-section .features-container .group-b .feature-c, .container .amenities-section .features-container .group-b .feature-d {
-    margin: 1em 0.5em;
-    background-color: #E65CE1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0em 0.5em 0em;
     border-radius: 0.3em;
+    padding: 0.5em;
   }
   .container .amenities-section .features-container .group-a .feature-a img, .container .amenities-section .features-container .group-a .feature-b img, .container .amenities-section .features-container .group-a .feature-c img, .container .amenities-section .features-container .group-a .feature-d img, .container .amenities-section .features-container .group-b .feature-a img, .container .amenities-section .features-container .group-b .feature-b img, .container .amenities-section .features-container .group-b .feature-c img, .container .amenities-section .features-container .group-b .feature-d img {
-    max-width: 100px;
-    height: 100px;
-    padding: 0.5em 0em 0em;
+    display: flex;
+    width: 60%;
+    height: auto;
+    padding: 1em 1em 0em;
+    background-color: transparent;
   }
   .container .amenities-section .features-container .group-a .feature-a p, .container .amenities-section .features-container .group-a .feature-b p, .container .amenities-section .features-container .group-a .feature-c p, .container .amenities-section .features-container .group-a .feature-d p, .container .amenities-section .features-container .group-b .feature-a p, .container .amenities-section .features-container .group-b .feature-b p, .container .amenities-section .features-container .group-b .feature-c p, .container .amenities-section .features-container .group-b .feature-d p {
-    font-size: 1rem;
+    display: flex;
+    font-size: 1.2rem;
     text-align: left;
     color: #16181a;
     padding: 1em 1em;
+    margin-bottom: 2.5em;
     text-align: left;
+    width: 175px;
+    background-color: transparent;
   }
   .container .amenities-section .mobile-footer {
     display: flex;
