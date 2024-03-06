@@ -405,12 +405,6 @@ h4 {
     overflow: auto;
     padding: 0em 3% 0em;
   }
-  .container .amenities-section .features-container .group-a .feature-a, .container .amenities-section .features-container .group-b .feature-a {
-    background-image: url("images/feature-a_background.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
   .container .amenities-section .features-container .group-a .feature-a, .container .amenities-section .features-container .group-a .feature-b, .container .amenities-section .features-container .group-a .feature-c, .container .amenities-section .features-container .group-a .feature-d, .container .amenities-section .features-container .group-b .feature-a, .container .amenities-section .features-container .group-b .feature-b, .container .amenities-section .features-container .group-b .feature-c, .container .amenities-section .features-container .group-b .feature-d {
     display: flex;
     flex-direction: column;
@@ -418,6 +412,8 @@ h4 {
     margin: 0em 0.5em 0em;
     border-radius: 0.3em;
     padding: 0.5em;
+    height: 260px;
+    background-image: url("images/feature-a_background.png");
   }
   .container .amenities-section .features-container .group-a .feature-a img, .container .amenities-section .features-container .group-a .feature-b img, .container .amenities-section .features-container .group-a .feature-c img, .container .amenities-section .features-container .group-a .feature-d img, .container .amenities-section .features-container .group-b .feature-a img, .container .amenities-section .features-container .group-b .feature-b img, .container .amenities-section .features-container .group-b .feature-c img, .container .amenities-section .features-container .group-b .feature-d img {
     display: flex;
