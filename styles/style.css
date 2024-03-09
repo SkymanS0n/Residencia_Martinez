@@ -43,9 +43,9 @@ h4 {
     /* End of Hero Section */
     /* Start of Amenities Section */
     /* End of Amenities Section */
+    /* Start of Features Section */
     /* Start of Roommate Matching Section */
     /* End of Roommate Matching Section */
-    /* Start of Features Section */
   }
   .container header {
     background-color: rgba(22, 24, 26, 0.1176470588);
@@ -227,7 +227,7 @@ h4 {
     width: 10.5em;
     transition: background-color 0.3s ease;
     width: 10.5em;
-    width: 10em;
+    width: 9em;
     width: 10.5em;
     border-radius: 0.5em;
     width: 10.5em;
@@ -250,7 +250,7 @@ h4 {
   .container .hero-section .hero-container {
     color: #efefef;
     margin-top: 0em;
-    padding-top: 5em;
+    padding-top: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,6 +270,7 @@ h4 {
     width: 70%;
     margin-top: 1em;
     font-size: 1.5rem;
+    line-height: 1.7;
     animation: fadeIn 1.6s ease-in-out forwards;
   }
   .container .hero-section .hero-container .hero-details h1 {
@@ -302,12 +303,12 @@ h4 {
     font-weight: 600;
     padding: 0.6em 1em;
     transition: background-color 0.3s ease;
-    width: 10em;
+    width: 9em;
     border-radius: 0.5em;
     font-size: 1.5rem;
     margin-right: 0em;
     text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
-    margin-top: 5em;
+    margin-top: 3em;
     box-shadow: 0px 2px 4px rgba(161, 165, 161, 0.718);
     background-color: #FF66C4;
     text-align: center;
@@ -356,24 +357,25 @@ h4 {
     height: auto;
     justify-content: flex-start;
     text-align: left;
-    background-color: #86F1F3;
+    background-image: url("/images/Amenities-Section-Background.svg");
+    background-position: center;
+    background-size: cover;
   }
   .container .amenities-section .amenities-container {
     width: 100%;
     height: auto;
   }
   .container .amenities-section .amenities-container h3 {
-    padding: 1.2em 5% 0.6em;
-    font-size: 4rem;
+    padding: 0.6em 5% 0.6em;
+    font-size: 4.5rem;
     color: #16181a;
-    text-align: center;
+    text-align: left;
   }
   .container .amenities-section .amenities-container .image-container {
     display: flex;
     flex-direction: row;
     width: 100%;
-    overflow: scroll;
-    padding: 0em 5% 0em 5%;
+    padding: 2em 0em 1em;
   }
   .container .amenities-section .amenities-container .image-container img {
     width: 100%;
@@ -381,74 +383,101 @@ h4 {
   }
   .container .amenities-section .amenities-container p {
     color: #16181a;
-    padding: 2em 5% 0em;
+    padding: 3em 5% 8em;
     font-size: 1.5rem;
+    line-height: 2;
   }
   .container .amenities-section .amenities-container p:nth-of-type(2) {
     padding: 2em 5% 4em;
     /* Add any other styles you want for the second <p> element */
   }
-  .container .amenities-section .features-container {
+  .container .features .features-container {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-    padding: 2em 0em;
+    padding: 2em 0em 2em;
     align-items: center;
+    background-color: #5CE1E6;
   }
-  .container .amenities-section .features-container .group-a, .container .amenities-section .features-container .group-b {
+  .container .features .features-container .group-a, .container .features .features-container .group-b {
     display: flex;
     flex-direction: row;
     width: 100%;
     overflow: auto;
     padding: 0em 3% 0em;
   }
-  .container .amenities-section .features-container .group-a .feature-a, .container .amenities-section .features-container .group-a .feature-b, .container .amenities-section .features-container .group-a .feature-c, .container .amenities-section .features-container .group-a .feature-d, .container .amenities-section .features-container .group-b .feature-a, .container .amenities-section .features-container .group-b .feature-b, .container .amenities-section .features-container .group-b .feature-c, .container .amenities-section .features-container .group-b .feature-d {
+  .container .features .features-container .group-a .feature-a, .container .features .features-container .group-a .feature-b, .container .features .features-container .group-a .feature-c, .container .features .features-container .group-a .feature-d, .container .features .features-container .group-b .feature-a, .container .features .features-container .group-b .feature-b, .container .features .features-container .group-b .feature-c, .container .features .features-container .group-b .feature-d {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0em 0.5em 0em;
     border-radius: 0.3em;
     padding: 0.5em;
-    height: 260px;
-    background-image: url("images/feature-a_background.png");
+    height: 270px;
+    background-color: #86F1F3;
+    position: relative;
   }
-  .container .amenities-section .features-container .group-a .feature-a img, .container .amenities-section .features-container .group-a .feature-b img, .container .amenities-section .features-container .group-a .feature-c img, .container .amenities-section .features-container .group-a .feature-d img, .container .amenities-section .features-container .group-b .feature-a img, .container .amenities-section .features-container .group-b .feature-b img, .container .amenities-section .features-container .group-b .feature-c img, .container .amenities-section .features-container .group-b .feature-d img {
-    display: flex;
-    width: 60%;
+  .container .features .features-container .group-a .feature-a.feature-a, .container .features .features-container .group-a .feature-b.feature-a, .container .features .features-container .group-a .feature-c.feature-a, .container .features .features-container .group-a .feature-d.feature-a, .container .features .features-container .group-b .feature-a.feature-a, .container .features .features-container .group-b .feature-b.feature-a, .container .features .features-container .group-b .feature-c.feature-a, .container .features .features-container .group-b .feature-d.feature-a {
+    background-image: url("/images/feature-a_background.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .container .features .features-container .group-a .feature-a.feature-b, .container .features .features-container .group-a .feature-b.feature-b, .container .features .features-container .group-a .feature-c.feature-b, .container .features .features-container .group-a .feature-d.feature-b, .container .features .features-container .group-b .feature-a.feature-b, .container .features .features-container .group-b .feature-b.feature-b, .container .features .features-container .group-b .feature-c.feature-b, .container .features .features-container .group-b .feature-d.feature-b {
+    background-image: url("/images/feature-b_background.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .container .features .features-container .group-a .feature-a.feature-c, .container .features .features-container .group-a .feature-b.feature-c, .container .features .features-container .group-a .feature-c.feature-c, .container .features .features-container .group-a .feature-d.feature-c, .container .features .features-container .group-b .feature-a.feature-c, .container .features .features-container .group-b .feature-b.feature-c, .container .features .features-container .group-b .feature-c.feature-c, .container .features .features-container .group-b .feature-d.feature-c {
+    background-image: url("/images/feature-c_background.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .container .features .features-container .group-a .feature-a.feature-d, .container .features .features-container .group-a .feature-b.feature-d, .container .features .features-container .group-a .feature-c.feature-d, .container .features .features-container .group-a .feature-d.feature-d, .container .features .features-container .group-b .feature-a.feature-d, .container .features .features-container .group-b .feature-b.feature-d, .container .features .features-container .group-b .feature-c.feature-d, .container .features .features-container .group-b .feature-d.feature-d {
+    background-image: url("/images/feature-d_background.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .container .features .features-container .group-a .feature-a img, .container .features .features-container .group-a .feature-b img, .container .features .features-container .group-a .feature-c img, .container .features .features-container .group-a .feature-d img, .container .features .features-container .group-b .feature-a img, .container .features .features-container .group-b .feature-b img, .container .features .features-container .group-b .feature-c img, .container .features .features-container .group-b .feature-d img {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
     height: auto;
-    padding: 1em 1em 0em;
-    background-color: transparent;
+    z-index: 1;
   }
-  .container .amenities-section .features-container .group-a .feature-a p, .container .amenities-section .features-container .group-a .feature-b p, .container .amenities-section .features-container .group-a .feature-c p, .container .amenities-section .features-container .group-a .feature-d p, .container .amenities-section .features-container .group-b .feature-a p, .container .amenities-section .features-container .group-b .feature-b p, .container .amenities-section .features-container .group-b .feature-c p, .container .amenities-section .features-container .group-b .feature-d p {
+  .container .features .features-container .group-a .feature-a p, .container .features .features-container .group-a .feature-b p, .container .features .features-container .group-a .feature-c p, .container .features .features-container .group-a .feature-d p, .container .features .features-container .group-b .feature-a p, .container .features .features-container .group-b .feature-b p, .container .features .features-container .group-b .feature-c p, .container .features .features-container .group-b .feature-d p {
     display: flex;
     font-size: 1.2rem;
     text-align: left;
     color: #16181a;
     padding: 1em 1em;
+    margin-top: 8em;
     margin-bottom: 2.5em;
     text-align: left;
     width: 175px;
-    background-color: transparent;
   }
-  .container .amenities-section .mobile-footer {
+  .container .features .mobile-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     color: #16181a;
+    background-color: #5CE1E6;
+    padding: 2em 0em;
   }
-  .container .amenities-section .mobile-footer .legal-regulations {
+  .container .features .mobile-footer .legal-regulations {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  .container .amenities-section .mobile-footer .legal-regulations a {
+  .container .features .mobile-footer .legal-regulations a {
     width: 100%;
     padding: 0em 0em 0.5em;
     display: flex;
@@ -544,7 +573,7 @@ h4 {
     width: 10.5em;
     transition: background-color 0.3s ease;
     width: 10.5em;
-    width: 10em;
+    width: 9em;
     width: 10.5em;
     border-radius: 0.5em;
     width: 10.5em;
@@ -561,13 +590,5 @@ h4 {
   .container .roommate-matching-section .roomate-matching-container .roommate-matching-form img {
     width: 100%;
     height: auto;
-  }
-  .container .features {
-    display: none;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    background-color: #FF66C4;
   }
 }/*# sourceMappingURL=style.css.map */
