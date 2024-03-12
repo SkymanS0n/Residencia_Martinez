@@ -267,14 +267,14 @@ h4 {
   }
   .container .hero-section .hero-container .hero-details h2 {
     margin-bottom: 0em;
-    width: 70%;
+    width: 65%;
     margin-top: 1em;
     font-size: 1.5rem;
     line-height: 1.7;
     animation: fadeIn 1.6s ease-in-out forwards;
   }
   .container .hero-section .hero-container .hero-details h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 600;
     margin-bottom: 0em;
     opacity: 0;
@@ -469,6 +469,13 @@ h4 {
     color: #16181a;
     background-color: #5CE1E6;
     padding: 2em 0em;
+  }
+  .container .features .mobile-footer .social-links #martinez-logo {
+    width: 100%;
+    height: auto;
+  }
+  .container .features .mobile-footer .social-links .icon-links img {
+    margin: 2em 0.5em 2em;
   }
   .container .features .mobile-footer .legal-regulations {
     display: flex;
