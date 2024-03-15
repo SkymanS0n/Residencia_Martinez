@@ -58,7 +58,6 @@ h4 {
     z-index: 5;
   }
   .container header .nav-section {
-    color: #efefef;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -116,20 +115,6 @@ h4 {
     transition: 0.5s ease-in-out;
     z-index: -1;
   }
-  .container header .nav-section #menu-toggle:checked ~ .mobile-footer {
-    left: 0;
-    transition: 0.4s ease-in-out;
-    position: fixed;
-    bottom: 0;
-  }
-  .container header .nav-section #menu-toggle:not(:checked) ~ .mobile-footer {
-    background-color: #5CE1E6;
-    left: -100%;
-    right: 0;
-    transition: 0.5s ease-in-out;
-    position: fixed;
-    bottom: 0;
-  }
   @keyframes fadeInMenu {
     from {
       opacity: 0;
@@ -181,7 +166,7 @@ h4 {
     width: 100%;
     height: auto;
   }
-  .container header .nav-section .slide-menu .my-address .my-location {
+  .container header .nav-section .slide-menu .my-address .greetings {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -189,7 +174,7 @@ h4 {
     font-size: 1.2rem;
     align-items: flex-start;
   }
-  .container header .nav-section .slide-menu .my-address .my-location :first-child {
+  .container header .nav-section .slide-menu .my-address .greetings :first-child {
     font-size: 2rem;
   }
   .container header .nav-section .slide-menu .nav-bar-links {
@@ -245,7 +230,10 @@ h4 {
     justify-content: flex-start;
     text-align: left;
     padding: 0em 5%;
-    background-color: transparent;
+    background-image: url("/images/Hero-Section-Background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .container .hero-section .hero-container {
     color: #efefef;
@@ -262,6 +250,7 @@ h4 {
   }
   .container .hero-section .hero-container .hero-details {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
@@ -274,12 +263,19 @@ h4 {
     animation: fadeIn 1.6s ease-in-out forwards;
   }
   .container .hero-section .hero-container .hero-details h1 {
-    font-size: 6rem;
+    font-size: 5.5rem;
     font-weight: 600;
     margin-bottom: 0em;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
   }
+}
+@media only screen and (max-width: 450px) and (min-device-width: 360px) and (max-device-width: 360px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (min-device-height: 600px) and (max-device-height: 800px), only screen and (max-width: 450px) and (min-device-width: 360px) and (max-device-width: 360px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-device-height: 600px) and (max-device-height: 800px) {
+  .container .hero-section .hero-container .hero-details h1 {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -308,7 +304,7 @@ h4 {
     font-size: 1.5rem;
     margin-right: 0em;
     text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
-    margin-top: 3em;
+    margin: 3em 0em 5em;
     box-shadow: 0px 2px 4px rgba(161, 165, 161, 0.718);
     background-color: #FF66C4;
     text-align: center;
@@ -339,8 +335,8 @@ h4 {
   .container .hero-section .hero-container .hero-img img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   @keyframes fadeInAndBlurRemoval {
     from {
@@ -371,6 +367,13 @@ h4 {
     color: #16181a;
     text-align: left;
   }
+}
+@media only screen and (max-width: 450px) and (min-device-width: 360px) and (max-device-width: 360px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (min-device-height: 600px) and (max-device-height: 800px), only screen and (max-width: 450px) and (min-device-width: 360px) and (max-device-width: 360px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-device-height: 600px) and (max-device-height: 800px) {
+  .container .amenities-section .amenities-container h3 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
   .container .amenities-section .amenities-container .image-container {
     display: flex;
     flex-direction: row;
