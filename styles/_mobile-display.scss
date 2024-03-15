@@ -15,7 +15,6 @@
             z-index: 5;
 
             .nav-section {
-                color: #efefef;
                 display: flex;
                 justify-content: space-between;
                 margin: auto;
@@ -75,22 +74,6 @@
                         z-index: -1;
                     }
 
-                    &:checked ~ .mobile-footer {
-                        left: 0;
-                        transition: 0.4s ease-in-out;
-                        position: fixed;
-                        bottom: 0;
-                    }
-
-                    &:not(:checked) ~ .mobile-footer {
-                        background-color: #5CE1E6;
-                        left: -100%;
-                        right: 0;
-                        transition: 0.5s ease-in-out;
-                        position: fixed;
-                        bottom: 0;
-                    }
-
                     @keyframes fadeInMenu {
                         from {
                             opacity: 0;
@@ -146,7 +129,7 @@
                             }
                         }
 
-                        .my-location {
+                        .greetings {
                             @include align;
                             margin: auto;
                             margin-left: 1em;
@@ -200,7 +183,11 @@
             justify-content: flex-start;
             text-align: left;
             padding: 0em 5%;
-            background-color: transparent;
+            background-image: url('/images/Hero-Section-Background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
     
             .hero-container {
                 color: $font-color1;
@@ -214,6 +201,7 @@
     
                 .hero-details {
                     width: 100%;
+                    height: auto;
                     @include align;
     
                     h2 {
@@ -226,11 +214,24 @@
                     }
                     
                     h1 {
-                        font-size: 6rem;
+                        font-size: 5.5rem;
                         font-weight: 600;
                         margin-bottom: 0em;
                         opacity: 0;
                         animation: fadeIn 1s ease-in-out forwards;
+                    }
+
+                    @media only screen 
+                        and (min-device-width: 360px) 
+                        and (max-device-width: 360px) 
+                        and (-webkit-min-device-pixel-ratio: 1)
+                        and (-webkit-min-device-pixel-ratio: 2)      
+                        and (min-resolution: 192dpi)
+                        and (min-device-height: 600px)
+                        and (max-device-height: 800px) {
+                        h1 {
+                            font-size: 4.5rem;
+                        }
                     }
                     
                     @keyframes fadeIn {
@@ -253,7 +254,7 @@
                             @each $property, $value in $btn-mobile {
                                 #{$property}: $value;
                             }
-                            margin-top: 3em;
+                            margin: 3em 0em 5em;
                             box-shadow: 0px 2px 4px rgba(161, 165, 161, 0.718);
                             background-color: #FF66C4;
                             text-align: center;
@@ -288,7 +289,7 @@
                     img {
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                     }
                 }
                 
@@ -322,6 +323,7 @@
             .amenities-container {
                 width: 100%;
                 height: auto;
+                
 
                 h3 {
                     padding: 0.6em 5% 0.6em;
@@ -329,6 +331,19 @@
                     color: #16181a;
                     text-align: left;
                 }
+
+                @media only screen 
+                    and (min-device-width: 360px) 
+                    and (max-device-width: 360px) 
+                    and (-webkit-min-device-pixel-ratio: 1)
+                    and (-webkit-min-device-pixel-ratio: 2)      
+                    and (min-resolution: 192dpi)
+                    and (min-device-height: 600px)
+                    and (max-device-height: 800px) {
+                        h3 {
+                            font-size: 4rem;
+                        }
+                    }
 
                 .image-container {
                     display: flex;
