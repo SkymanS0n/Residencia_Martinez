@@ -395,8 +395,6 @@ h4 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    height: 100%;
     width: 100%;
     padding: 2em 0em 2em;
     align-items: center;
@@ -597,5 +595,80 @@ h4 {
   .container .roommate-matching-section .roomate-matching-container .roommate-matching-form img {
     width: 100%;
     height: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F054B0;
+    height: 100vh;
+    width: 100%;
+  }
+  main .container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding-bottom: 5em;
+  }
+  main .container .messageus img {
+    width: 100%;
+    height: auto;
+  }
+  main .container .messageus h1 {
+    margin-bottom: 2em;
+  }
+  main .container .form-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0em 1em;
+  }
+  main .container .form-message form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .container .form-message form .message-email, main .container .form-message form .message-phone, main .container .form-message form .message-message {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-bottom: 1.5em;
+  }
+  main .container .form-message form .message-email label, main .container .form-message form .message-phone label, main .container .form-message form .message-message label {
+    font-size: 1.5rem;
+  }
+  main .container .form-message form .message-email #address, main .container .form-message form .message-email #number, main .container .form-message form .message-email #message, main .container .form-message form .message-phone #address, main .container .form-message form .message-phone #number, main .container .form-message form .message-phone #message, main .container .form-message form .message-message #address, main .container .form-message form .message-message #number, main .container .form-message form .message-message #message {
+    height: 2.5em;
+    background-color: rgb(231, 231, 231);
+    padding-left: 0.5em;
+    width: 100%;
+  }
+  main .container .form-message form .message-email #message, main .container .form-message form .message-phone #message, main .container .form-message form .message-message #message {
+    height: 8em;
+  }
+  main .container .form-message form .message-email #message textarea, main .container .form-message form .message-phone #message textarea, main .container .form-message form .message-message #message textarea {
+    overflow: scroll;
+  }
+  main .container .form-message form button {
+    align-self: center;
+    background-color: #FBBF00;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    color: #000000;
+    font-weight: 600;
+    padding: 0.6em 1em;
+    transition: background-color 0.3s ease;
+    width: 9em;
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+    margin-right: 0em;
+    text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
+    box-shadow: 0px 2px 4px rgba(161, 165, 161, 0.718);
+    background-color: aqua;
+    text-align: center;
+    margin-top: 1.5em;
   }
 }/*# sourceMappingURL=style.css.map */
