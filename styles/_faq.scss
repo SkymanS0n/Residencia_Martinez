@@ -1,0 +1,44 @@
+@media screen and (max-width:450px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: #5CE1E6;;
+        height: 100%;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5rem;
+            padding-bottom: 5em;
+            
+            .faq {
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+    
+                h1 {
+                    margin-bottom: 2em;
+                }
+            }
+
+            .faq-1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 0em 2em;
+
+                p {
+                    text-align: center;
+                    text-align: justify;
+                }
+            }
+            #rules {
+                text-decoration: underline;
+            }
+        }
+    }
+}
