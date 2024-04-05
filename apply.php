@@ -44,7 +44,9 @@
                         <p>NBI Clearance Certificate</p>
                         <img src="images/nbi.png" alt="">
                         <input type="file" name="upload">
-                        <button type="submit">Submit</button>
+                        <a href="step2.html">
+                            <button type="submit">Next</button>
+                        </a>
                     </form>
                 </div>
                 
