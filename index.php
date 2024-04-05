@@ -31,8 +31,8 @@
                             </div>
                         </div>
                         <ul class = "nav-bar-links">
-                            <li><a href="apply.html" class="menu-link">Apply Now</a></li>
-                            <li><a href="message.html" class="menu-link">Message Us</a></li>
+                            <li><a href="apply.php" class="menu-link">Apply Now</a></li>
+                            <li><a href="message.php" class="menu-link">Message Us</a></li>
                             <li><a href="faq.html" class="menu-link">FAQs</a></li>
                             
                             <button class="menu-send-message" onclick="location. href='#'" aria-label="Tap to login.">Login
