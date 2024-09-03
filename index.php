@@ -46,7 +46,7 @@
                     <div class="hero-container">
                         <div class="hero-details">
                             <h1>The place is right here <span></span></h1>
-                            <h2>Welcome to Residencia Martinez, we offer the ultimate boarding experience for college women.</h2>
+                            <h2>Welcome to Residencia Eijansantos, we offer the ultimate boarding experience for college women.</h2>
                             <div class="buttons">
                                 <button class="view-work" onclick="location.href= 'message.html'">
                                     Inquire Now
