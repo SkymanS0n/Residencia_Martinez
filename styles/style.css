@@ -621,6 +621,10 @@ h4 {
     margin-top: 1em;
     margin-bottom: 1.5em;
     width: 100%;
+    font-size: larger;
+  }
+  main .container .steps p {
+    margin: 1em 0em 0em 0em;
   }
   main .container .steps .stepsA {
     display: flex;
@@ -685,6 +689,7 @@ h4 {
   }
   main .container .form-message form img {
     margin-bottom: 2em;
+    margin-top: 2em;
     width: 100%;
     height: auto;
   }
@@ -838,6 +843,27 @@ h4 {
     margin-top: 1em;
     margin-bottom: 1.5em;
     width: 100%;
+  }
+  main .container .steps .stepsA {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em 0.5em;
+    width: 100%;
+    height: auto;
+    align-items: center; /* Vertical centering */
+    background-color: #FF66C4;
+  }
+  main .container .steps .stepsA .step1 {
+    display: flex;
+    width: 45%;
+    text-align: center;
+    padding: 0em 0.08em;
+  }
+  main .container .steps .stepsA .step2, main .container .steps .stepsA .step3, main .container .steps .stepsA .step4 {
+    display: flex;
+    width: 25%;
+    text-align: center;
+    padding: 0em 0.04em;
   }
   main .container .form-message {
     display: flex;
