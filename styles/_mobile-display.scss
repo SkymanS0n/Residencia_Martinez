@@ -178,15 +178,25 @@
         /* End of header */
 
         .hero-section {
+            @keyframes blurToClear {
+                0% {
+                    filter: blur(10px);
+                }
+                100% {
+                    filter: blur(0px);
+                }
+            }
+            
             width: 100%;
             height: auto;
             text-align: left;
             padding: 0em 5% 5em;
             background-color: #5CE1E6;
-            background-image: url('https://github.com/SkymanS0n/Residencia_Martinez/blob/main/images/Hero-Section-Background-Optimized.png?raw=true');
+            background-image: url('https://raw.githubusercontent.com/SkymanS0n/Residencia_Martinez/be581770089974e40124466c3c1ebacc8a63a1cb/images/Hero-Section-Background-Optimized.svg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            animation: blurToClear 0.75s ease-out;
     
             .hero-container {
                 color: $font-color1;
