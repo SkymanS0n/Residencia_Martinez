@@ -1,4 +1,4 @@
-$mobile-font: 2rem;
+$mobile-font: 32px;
 $h3: 2rem;
 $mobile-font-h4: 2.5rem;
 $hdr-ftr-bg: #16181a;
@@ -6,9 +6,10 @@ $mobile-width: 90%;
 $font-color1: #efefef;
 $focus: 2px solid white;
 $carouselWidth: 100%;
+
 $btn-mobile: (
   align-self: center,
-  background-color: #FBBF00,
+  background-color: #5ce1e6,
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4),
   color: #000000,
   font-weight: 600,
