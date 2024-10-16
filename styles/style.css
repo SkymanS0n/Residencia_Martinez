@@ -931,4 +931,68 @@ h4 {
     text-align: center;
     margin-top: 1.5em;
   }
+}
+@media screen and (max-width: 450px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+  }
+  main .form-container .form-login {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  main .form-container .form-login .login-container h2 {
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    color: #333;
+  }
+  main .form-container .form-login .login-container form .form-group {
+    margin-bottom: 15px;
+  }
+  main .form-container .form-login .login-container form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  main .form-container .form-login .login-container form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  main .form-container .form-login .login-container form .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  main .form-container .form-login .login-container form .login-btn:hover {
+    background-color: #218838;
+  }
+  main .form-container .form-login .login-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  main .form-container .form-login .login-container p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  main .form-container .form-login .login-container p a:hover {
+    color: #0056b3;
+  }
 }/*# sourceMappingURL=style.css.map */
