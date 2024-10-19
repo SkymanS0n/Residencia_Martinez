@@ -1,9 +1,8 @@
-@media screen and (max-width:450px) {
-    
-    iframe {
-        width: 100%;               // Full width of the viewport
-        height: 100%;              // Full height of the viewport
-        border: none;              // Removes any borders from the iframe
+@media screen and (max-width: 450px) {
+    .applynow {
+        display: flex;              // Center content horizontally
+        align-items: center;        // Center content vertically
+        height: 100vh;    
+        background-color: #5CE1E6;
     }
 }
-

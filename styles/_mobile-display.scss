@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width:450px) {
     
     .container {
@@ -155,11 +157,12 @@
 
                             a {
                                 width: 100%;
-                                font-size: 1.5rem;
+                                font-size: 1.6rem;
                                 display: flex;
                                 align-items: flex-start;
                                 justify-items: flex-start;
                                 color: #16181a;
+                                margin: 1rem 0rem;
                             }
                         }
 
@@ -217,7 +220,7 @@
                         margin-bottom: 0em;
                         width: 60%;
                         margin-top: 1em;
-                        font-size: 1.5rem;
+                        font-size: 1.6rem;
                         line-height: 1.7;
                         animation: fadeIn 1.6s ease-in-out forwards;
                     }
@@ -228,6 +231,19 @@
                         margin-bottom: 0em;
                         opacity: 0;
                         animation: fadeIn 1s ease-in-out forwards;
+                        width: auto;
+                    }
+
+                    @media screen and (max-width:200px) {
+
+                        h1 {
+                            font-size: 2.5rem;
+                            font-weight: 600;
+                            margin-bottom: 0em;
+                            opacity: 0;
+                            animation: fadeIn 1s ease-in-out forwards;
+                        }
+                    
                     }
 
                     @media only screen 
@@ -336,6 +352,18 @@
                     font-size: 4.75rem;
                     color: #16181a;
                     text-align: left;
+                    width: auto;
+                }
+
+                @media screen and (max-width:200px) {
+
+                    h3 {
+                        padding: 0em 5% 0.6em;
+                        font-size: 2.75rem;
+                        color: #16181a;
+                        text-align: left;
+                    }
+                
                 }
 
                 @media only screen 
@@ -366,7 +394,7 @@
                 p {
                     color: #16181a;
                     padding: 3em 5% 8em;
-                    font-size: 1.5rem;
+                    font-size: 1.6rem;
                     line-height: 2;
                 }
 
@@ -382,6 +410,7 @@
         /* Start of Features Section */
 
         .features {
+            
             .features-container {
                 display: flex;
                 flex-direction: column;
@@ -468,15 +497,13 @@
                 padding: 2em 0em;
 
                 .social-links {
+                    height: auto;
+                    width: 45%;
+                    margin-bottom: 3.5rem;
+
                     #martinez-logo{
                         width: 100%;
                         height: auto;
-                    }
-
-                    .icon-links {
-                        img {
-                            margin: 2em 0.5em 2em;
-                        }
                     }
                 }
     
@@ -494,9 +521,9 @@
             }
         }
 
-        /* Start of Roommate Matching Section */
+        // Start of Roommate Matching Section
 
-        .roommate-matching-section {
+        /*.roommate-matching-section {
             display: none;
             background-color: #5CE1E6;
             height: auto;
@@ -580,11 +607,6 @@
                     }
 
                     button {
-
-                        @each $property, $value in $btn-mobile {
-                            #{$property}: $value;
-                            width: 10.5em;
-                        }
                         background-color: #FF66C4;
                         margin-bottom: 2em;
                         margin-top: 1em;
@@ -597,9 +619,7 @@
                     }
                 }
             }
-        }
-
-        /* End of Roommate Matching Section */
-
+        } */
+        // End of Roommate Matching Section
     }
 }
