@@ -123,14 +123,15 @@ h4 {
   }
 }
 @media screen and (max-width: 450px) {
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
+  .applynow {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #5CE1E6;
   }
 }
 @media screen and (max-width: 450px) {
-  main .container {
+  .container-faq {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -139,16 +140,16 @@ h4 {
     height: 100vh;
     background-color: #5CE1E6;
   }
-  main .container .faq img {
+  .container-faq .faq img {
     width: 100%;
     height: auto;
   }
-  main .container .faq h1 {
+  .container-faq .faq h1 {
     margin-bottom: 2em;
     margin-top: 3.125em;
     font-size: x-large;
   }
-  main .container .faq-1 {
+  .container-faq .faq-1 {
     align-items: center;
     width: 100%;
     height: 50%;
@@ -158,17 +159,17 @@ h4 {
     overflow-y: scroll;
     margin-bottom: 2em;
   }
-  main .container .faq-1 p {
+  .container-faq .faq-1 p {
     text-align: justify;
     margin: 0.5em 0em;
     font-size: 1em;
     padding: 0;
   }
-  main .container .faq-1 strong {
+  .container-faq .faq-1 strong {
     display: block;
     text-align: center;
   }
-  main .container #rules {
+  .container-faq #rules {
     text-decoration: none;
     font-weight: 600;
     font-size: 1em;
@@ -188,8 +189,103 @@ h4 {
     /* Start of Amenities Section */
     /* End of Amenities Section */
     /* Start of Features Section */
-    /* Start of Roommate Matching Section */
-    /* End of Roommate Matching Section */
+    /*.roommate-matching-section {
+        display: none;
+        background-color: #5CE1E6;
+        height: auto;
+        width: 100%;
+
+        .roomate-matching-container {
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+
+            H4 {
+                font-size: 5rem;
+                padding: 1.2em 5% 0.2em;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 1.5rem;
+                padding: 0em 5% 0.2em;
+            }
+
+            .roommate-matching-form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin-top: 1em;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    font-size: 1.5rem;
+                    margin: 2em 0em 1em;
+                    padding-left: 21%;
+
+                    .input-course, .input-age, .input-color {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 1em 0em;
+
+                        label {
+                            padding: 0em 1em;
+                        }
+
+                        input {
+                            border: 2px solid $font-color1;
+                            border-radius: 0.3em;
+                            text-align: left;
+                            width: 50%;
+                        }
+
+                        #course {
+                            width: 42.5%;
+                        }
+
+                        #age {
+                            width: 49.5%;
+                        }
+
+                        #color {
+                            width: 48%;
+                        }
+
+                        &:nth-child(2) {
+                            padding: 0em 2em 0em 1.6em;
+                        }
+
+                        &:nth-child(3) {
+                            padding: 1em 2em 1em 1em;
+                        }
+
+                        ::placeholder {
+                            background-color: #efefef;
+                            padding: 0em 0.2em 0em 0.2em;
+                        }
+
+                        // Add styling for the input field inside .input-age if needed
+                    }
+                }
+
+                button {
+                    background-color: #FF66C4;
+                    margin-bottom: 2em;
+                    margin-top: 1em;
+                    color: #FFFFFF;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    } */
   }
   .container header {
     background-color: rgba(22, 24, 26, 0.1176470588);
@@ -334,11 +430,12 @@ h4 {
   }
   .container header .nav-section .slide-menu .nav-bar-links li a {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: flex-start;
     justify-items: flex-start;
     color: #16181a;
+    margin: 1rem 0rem;
   }
   .container header .nav-section .slide-menu .nav-bar-links .menu-send-message {
     margin: 5em 0em 5em;
@@ -358,7 +455,7 @@ h4 {
     width: 10.5em;
     border-radius: 0.5em;
     width: 10.5em;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     width: 10.5em;
     margin-right: 0em;
     width: 10.5em;
@@ -409,12 +506,22 @@ h4 {
     margin-bottom: 0em;
     width: 60%;
     margin-top: 1em;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.7;
     animation: fadeIn 1.6s ease-in-out forwards;
   }
   .container .hero-section .hero-container .hero-details h1 {
     font-size: 5.5rem;
+    font-weight: 600;
+    margin-bottom: 0em;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    width: auto;
+  }
+}
+@media screen and (max-width: 450px) and (max-width: 200px) {
+  .container .hero-section .hero-container .hero-details h1 {
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 0em;
     opacity: 0;
@@ -451,7 +558,7 @@ h4 {
     transition: background-color 0.3s ease;
     width: 9em;
     border-radius: 0.5em;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-right: 0em;
     text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
     margin: 3em 0em 12em;
@@ -513,6 +620,15 @@ h4 {
     font-size: 4.75rem;
     color: #16181a;
     text-align: left;
+    width: auto;
+  }
+}
+@media screen and (max-width: 450px) and (max-width: 200px) {
+  .container .amenities-section .amenities-container h3 {
+    padding: 0em 5% 0.6em;
+    font-size: 2.75rem;
+    color: #16181a;
+    text-align: left;
   }
 }
 @media only screen and (max-width: 450px) and (min-device-width: 360px) and (max-device-width: 360px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (min-device-height: 600px) and (max-device-height: 800px), only screen and (max-width: 450px) and (min-device-width: 360px) and (max-device-width: 360px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-device-height: 600px) and (max-device-height: 800px) {
@@ -534,7 +650,7 @@ h4 {
   .container .amenities-section .amenities-container p {
     color: #16181a;
     padding: 3em 5% 8em;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2;
   }
   .container .amenities-section .amenities-container p:nth-of-type(2) {
@@ -618,12 +734,14 @@ h4 {
     background-color: #5CE1E6;
     padding: 2em 0em;
   }
+  .container .features .mobile-footer .social-links {
+    height: auto;
+    width: 45%;
+    margin-bottom: 3.5rem;
+  }
   .container .features .mobile-footer .social-links #martinez-logo {
     width: 100%;
     height: auto;
-  }
-  .container .features .mobile-footer .social-links .icon-links img {
-    margin: 2em 0.5em 2em;
   }
   .container .features .mobile-footer .legal-regulations {
     display: flex;
@@ -641,124 +759,19 @@ h4 {
     align-items: center;
     font-weight: bold;
   }
-  .container .roommate-matching-section {
-    display: none;
-    background-color: #5CE1E6;
-    height: auto;
-    width: 100%;
-  }
-  .container .roommate-matching-section .roomate-matching-container {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-  }
-  .container .roommate-matching-section .roomate-matching-container H4 {
-    font-size: 5rem;
-    padding: 1.2em 5% 0.2em;
-    font-weight: 600;
-  }
-  .container .roommate-matching-section .roomate-matching-container p {
-    font-size: 1.5rem;
-    padding: 0em 5% 0.2em;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1em;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    font-size: 1.5rem;
-    margin: 2em 0em 1em;
-    padding-left: 21%;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-course, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-age, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-color {
-    display: flex;
-    flex-direction: row;
-    padding: 1em 0em;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-course label, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-age label, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-color label {
-    padding: 0em 1em;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-course input, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-age input, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-color input {
-    border: 2px solid #efefef;
-    border-radius: 0.3em;
-    text-align: left;
-    width: 50%;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-course #course, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-age #course, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-color #course {
-    width: 42.5%;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-course #age, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-age #age, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-color #age {
-    width: 49.5%;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-course #color, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-age #color, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-color #color {
-    width: 48%;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-course:nth-child(2), .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-age:nth-child(2), .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-color:nth-child(2) {
-    padding: 0em 2em 0em 1.6em;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-course:nth-child(3), .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-age:nth-child(3), .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-color:nth-child(3) {
-    padding: 1em 2em 1em 1em;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-course ::-moz-placeholder, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-age ::-moz-placeholder, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-color ::-moz-placeholder {
-    background-color: #efefef;
-    padding: 0em 0.2em 0em 0.2em;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-course ::placeholder, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-age ::placeholder, .container .roommate-matching-section .roomate-matching-container .roommate-matching-form form .input-color ::placeholder {
-    background-color: #efefef;
-    padding: 0em 0.2em 0em 0.2em;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form button {
-    align-self: center;
-    width: 10.5em;
-    background-color: #5ce1e6;
-    width: 10.5em;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-    width: 10.5em;
-    color: #ffffff;
-    width: 10.5em;
-    padding: 0.6em 1em;
-    width: 10.5em;
-    transition: background-color 0.3s ease;
-    width: 10.5em;
-    width: 9em;
-    width: 10.5em;
-    border-radius: 0.5em;
-    width: 10.5em;
-    font-size: 1.5rem;
-    width: 10.5em;
-    margin-right: 0em;
-    width: 10.5em;
-    text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
-    width: 10.5em;
-    background-color: #FF66C4;
-    margin-bottom: 2em;
-    margin-top: 1em;
-    color: #FFFFFF;
-  }
-  .container .roommate-matching-section .roomate-matching-container .roommate-matching-form img {
-    width: 100%;
-    height: auto;
-  }
 }
 @media screen and (max-width: 450px) {
-  .container {
+  .container-apply {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
   }
-  .container .steps {
+  .container-apply .steps {
     margin-top: 1em;
     margin-bottom: 1.5em;
     width: 100%;
   }
-  .container .steps .stepsA {
+  .container-apply .steps .stepsA {
     display: flex;
     flex-direction: row;
     padding: 0.5em 0.5em;
@@ -767,19 +780,19 @@ h4 {
     align-items: center; /* Vertical centering */
     background-color: #FF66C4;
   }
-  .container .steps .stepsA .step1 {
+  .container-apply .steps .stepsA .step1 {
     display: flex;
     width: 45%;
     text-align: center;
     padding: 0em 0.08em;
   }
-  .container .steps .stepsA .step2, .container .steps .stepsA .step3, .container .steps .stepsA .step4 {
+  .container-apply .steps .stepsA .step2, .container-apply .steps .stepsA .step3, .container-apply .steps .stepsA .step4 {
     display: flex;
     width: 25%;
     text-align: center;
     padding: 0em 0.04em;
   }
-  .container .form-message {
+  .container-apply .form-message {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -788,46 +801,46 @@ h4 {
     width: 100%;
     height: auto;
   }
-  .container .form-message form {
+  .container-apply .form-message form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .container .form-message form .message-email, .container .form-message form .message-phone, .container .form-message form .completename {
+  .container-apply .form-message form .message-email, .container-apply .form-message form .message-phone, .container-apply .form-message form .completename {
     width: 100%;
     height: auto;
     text-align: left;
     margin-bottom: 1.5em;
   }
-  .container .form-message form .message-email label, .container .form-message form .message-phone label, .container .form-message form .completename label {
+  .container-apply .form-message form .message-email label, .container-apply .form-message form .message-phone label, .container-apply .form-message form .completename label {
     font-size: 1.5rem;
   }
-  .container .form-message form .message-email #address, .container .form-message form .message-email #number, .container .form-message form .message-email #completename, .container .form-message form .message-phone #address, .container .form-message form .message-phone #number, .container .form-message form .message-phone #completename, .container .form-message form .completename #address, .container .form-message form .completename #number, .container .form-message form .completename #completename {
+  .container-apply .form-message form .message-email #address, .container-apply .form-message form .message-email #number, .container-apply .form-message form .message-email #completename, .container-apply .form-message form .message-phone #address, .container-apply .form-message form .message-phone #number, .container-apply .form-message form .message-phone #completename, .container-apply .form-message form .completename #address, .container-apply .form-message form .completename #number, .container-apply .form-message form .completename #completename {
     height: 2.5em;
     background-color: rgb(231, 231, 231);
     padding-left: 0.5em;
     width: 100%;
   }
-  .container .form-message form #number {
+  .container-apply .form-message form #number {
     margin-bottom: 1em;
   }
-  .container .form-message form #doclabel {
+  .container-apply .form-message form #doclabel {
     text-align: left;
     margin-bottom: 0.5em;
   }
-  .container .form-message form p {
+  .container-apply .form-message form p {
     margin-bottom: 0.5em;
   }
-  .container .form-message form img {
+  .container-apply .form-message form img {
     margin-bottom: 2em;
     width: 100%;
     height: auto;
   }
-  .container .form-message form input[type=file] {
+  .container-apply .form-message form input[type=file] {
     margin-bottom: 2em;
   }
-  .container .form-message form button {
+  .container-apply .form-message form button {
     align-self: center;
     background-color: #5ce1e6;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
@@ -836,7 +849,7 @@ h4 {
     transition: background-color 0.3s ease;
     width: 9em;
     border-radius: 0.5em;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-right: 0em;
     text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
     box-shadow: 0px 2px 4px rgba(161, 165, 161, 0.718);
@@ -847,8 +860,7 @@ h4 {
 }
 @media screen and (max-width: 450px) {
   h2 {
-    margin-bottom: 1.5em;
-    margin-top: 1em;
+    margin-bottom: 3.6rem;
     color: #333;
     font-size: x-large;
   }
@@ -858,38 +870,38 @@ h4 {
     align-items: center;
     width: 100%;
     height: 100vh;
-    padding: 1em;
+    padding: 7.5rem 1.6rem;
     background-color: #5CE1E6;
     margin: auto;
   }
   .form-container .form-login {
     background-color: white;
-    padding: 30px 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    padding: 3rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    width: 100%;
     text-align: center;
   }
   .form-container .form-login .login-container form .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
   .form-container .form-login .login-container form .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     color: #333;
     font-size: large;
     text-align: left;
   }
   .form-container .form-login .login-container form .form-group input {
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: large;
   }
   .form-container .form-login .login-container form .login-btn {
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
     background-color: #FF66C4;
     color: white;
     border: none;
@@ -901,8 +913,8 @@ h4 {
     background-color: #fa12a1;
   }
   .form-container .form-login .login-container p {
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 2rem;
+    font-size: 1.4rem;
     color: #333;
   }
   .form-container .form-login .login-container p a {
