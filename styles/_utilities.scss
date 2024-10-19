@@ -1,4 +1,4 @@
-$mobile-font: 32px;
+$mobile-font: 1.6rem;
 $h3: 2rem;
 $mobile-font-h4: 2.5rem;
 $hdr-ftr-bg: #16181a;
@@ -11,8 +11,7 @@ $btn-mobile: (
   align-self: center,
   background-color: #5ce1e6,
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4),
-  color: #000000,
-  font-weight: 600,
+  color: #ffffff,
   padding: 0.6em 1em,
   transition: background-color 0.3s ease,
   width: 9em,
@@ -20,18 +19,6 @@ $btn-mobile: (
   font-size: 1.5rem,
   margin-right: 0em,
   text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5)
-);
-
-$btn-single: (
-    align-self: center,
-    background-color: transparent,
-    box-shadow: none,
-    color: #FBBF00,
-    font-weight: 100,
-    padding: 0.6em 1em,
-    width: 10em,
-    border-radius: 2em,
-    font-size: 2rem,
 );
 
 @mixin mobileFontH3 {
