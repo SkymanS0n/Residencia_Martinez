@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("main");
 *:focus {
   outline: none;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 html {
@@ -9,7 +17,7 @@ html {
 }
 
 body {
-  font-size: 32px;
+  font-size: 1.6rem;
   text-align: center;
   font-weight: 400;
 }
@@ -34,76 +42,139 @@ h4 {
 }
 
 @media screen and (max-width: 450px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  main .container {
+  .container-message {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     padding-bottom: 5em;
     height: 100vh;
-    background-color: #F054B0;
+    background-color: #5CE1E6;
+    padding: 5em 1.5em;
+    color: #333333;
   }
-  main .container .messageus img {
+  .container-message .messageus img {
     width: 100%;
     height: auto;
   }
-  main .container .messageus h1 {
+  .container-message .messageus h1 {
     margin-bottom: 2em;
+    font-size: x-large;
   }
-  main .container .form-message {
+  .container-message .form-message {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0em 1em;
+    padding: 2em 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
   }
-  main .container .form-message form {
+  .container-message .form-message form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  main .container .form-message form .message-email, main .container .form-message form .message-phone, main .container .form-message form .message-message {
+  .container-message .form-message form .message-email {
+    margin-top: 1.5em;
+  }
+  .container-message .form-message form .message-email, .container-message .form-message form .message-phone, .container-message .form-message form .message-message {
     width: 100%;
     height: auto;
     text-align: left;
     margin-bottom: 1.5em;
   }
-  main .container .form-message form .message-email label, main .container .form-message form .message-phone label, main .container .form-message form .message-message label {
-    font-size: 1.5rem;
+  .container-message .form-message form .message-email label, .container-message .form-message form .message-phone label, .container-message .form-message form .message-message label {
+    font-size: 1.8rem;
   }
-  main .container .form-message form .message-email #address, main .container .form-message form .message-email #number, main .container .form-message form .message-email #message, main .container .form-message form .message-phone #address, main .container .form-message form .message-phone #number, main .container .form-message form .message-phone #message, main .container .form-message form .message-message #address, main .container .form-message form .message-message #number, main .container .form-message form .message-message #message {
+  .container-message .form-message form .message-email #address, .container-message .form-message form .message-email #number, .container-message .form-message form .message-email #message, .container-message .form-message form .message-phone #address, .container-message .form-message form .message-phone #number, .container-message .form-message form .message-phone #message, .container-message .form-message form .message-message #address, .container-message .form-message form .message-message #number, .container-message .form-message form .message-message #message {
     height: 2.5em;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
     padding-left: 0.5em;
     width: 100%;
+    border-radius: 0.25rem;
+    border: 1px solid #d6d6d6;
+    font-size: large;
   }
-  main .container .form-message form .message-email #message, main .container .form-message form .message-phone #message, main .container .form-message form .message-message #message {
+  .container-message .form-message form .message-email #message, .container-message .form-message form .message-phone #message, .container-message .form-message form .message-message #message {
     height: 8em;
   }
-  main .container .form-message form .message-email #message textarea, main .container .form-message form .message-phone #message textarea, main .container .form-message form .message-message #message textarea {
+  .container-message .form-message form .message-email #message textarea, .container-message .form-message form .message-phone #message textarea, .container-message .form-message form .message-message #message textarea {
     overflow: auto;
   }
-  main .container .form-message form button {
-    align-self: center !important;
-    background-color: #5ce1e6 !important;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4) !important;
-    color: #000000 !important;
-    font-weight: 600 !important;
-    padding: 0.6em 1em !important;
-    transition: background-color 0.3s ease !important;
-    width: 9em !important;
-    border-radius: 0.5em !important;
-    font-size: 1.5rem !important;
-    margin-right: 0em !important;
-    text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5) !important;
+  .container-message .form-message form button {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
     box-shadow: 0px 2px 4px rgba(161, 165, 161, 0.718);
     text-align: center;
-    margin-top: 1.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    color: white;
+    background-color: #FF66C4;
+  }
+  .container-message .form-message form p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 0em 1.5em 5em;
+    width: auto;
+    height: 100vh;
+    background-color: #5CE1E6;
+  }
+  main .container .faq img {
+    width: 100%;
+    height: auto;
+  }
+  main .container .faq h1 {
+    margin-bottom: 2em;
+    margin-top: 3.125em;
+    font-size: x-large;
+  }
+  main .container .faq-1 {
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding: 1em 1.5em;
+    background-color: #FFFFFF;
+    border-radius: 0.5em;
+    overflow-y: scroll;
+    margin-bottom: 2em;
+  }
+  main .container .faq-1 p {
+    text-align: justify;
+    margin: 0.5em 0em;
+    font-size: 1em;
+    padding: 0;
+  }
+  main .container .faq-1 strong {
+    display: block;
+    text-align: center;
+  }
+  main .container #rules {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
   }
 }
 @media screen and (max-width: 450px) {
@@ -277,9 +348,7 @@ h4 {
     width: 10.5em;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
     width: 10.5em;
-    color: #000000;
-    width: 10.5em;
-    font-weight: 600;
+    color: #ffffff;
     width: 10.5em;
     padding: 0.6em 1em;
     width: 10.5em;
@@ -377,8 +446,7 @@ h4 {
     align-self: center;
     background-color: #5ce1e6;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-    color: #000000;
-    font-weight: 600;
+    color: #ffffff;
     padding: 0.6em 1em;
     transition: background-color 0.3s ease;
     width: 9em;
@@ -653,9 +721,7 @@ h4 {
     width: 10.5em;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
     width: 10.5em;
-    color: #000000;
-    width: 10.5em;
-    font-weight: 600;
+    color: #ffffff;
     width: 10.5em;
     padding: 0.6em 1em;
     width: 10.5em;
@@ -674,6 +740,7 @@ h4 {
     background-color: #FF66C4;
     margin-bottom: 2em;
     margin-top: 1em;
+    color: #FFFFFF;
   }
   .container .roommate-matching-section .roomate-matching-container .roommate-matching-form img {
     width: 100%;
@@ -681,26 +748,17 @@ h4 {
   }
 }
 @media screen and (max-width: 450px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  main .container {
+  .container {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    padding-bottom: 5em;
   }
-  main .container .steps {
+  .container .steps {
     margin-top: 1em;
     margin-bottom: 1.5em;
     width: 100%;
-    font-size: larger;
   }
-  main .container .steps p {
-    margin: 1em 0em 0em 0em;
-  }
-  main .container .steps .stepsA {
+  .container .steps .stepsA {
     display: flex;
     flex-direction: row;
     padding: 0.5em 0.5em;
@@ -709,19 +767,19 @@ h4 {
     align-items: center; /* Vertical centering */
     background-color: #FF66C4;
   }
-  main .container .steps .stepsA .step1 {
+  .container .steps .stepsA .step1 {
     display: flex;
     width: 45%;
     text-align: center;
     padding: 0em 0.08em;
   }
-  main .container .steps .stepsA .step2, main .container .steps .stepsA .step3, main .container .steps .stepsA .step4 {
+  .container .steps .stepsA .step2, .container .steps .stepsA .step3, .container .steps .stepsA .step4 {
     display: flex;
     width: 25%;
     text-align: center;
     padding: 0em 0.04em;
   }
-  main .container .form-message {
+  .container .form-message {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -730,52 +788,50 @@ h4 {
     width: 100%;
     height: auto;
   }
-  main .container .form-message form {
+  .container .form-message form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  main .container .form-message form .message-email, main .container .form-message form .message-phone, main .container .form-message form .completename {
+  .container .form-message form .message-email, .container .form-message form .message-phone, .container .form-message form .completename {
     width: 100%;
     height: auto;
     text-align: left;
     margin-bottom: 1.5em;
   }
-  main .container .form-message form .message-email label, main .container .form-message form .message-phone label, main .container .form-message form .completename label {
+  .container .form-message form .message-email label, .container .form-message form .message-phone label, .container .form-message form .completename label {
     font-size: 1.5rem;
   }
-  main .container .form-message form .message-email #address, main .container .form-message form .message-email #number, main .container .form-message form .message-email #completename, main .container .form-message form .message-phone #address, main .container .form-message form .message-phone #number, main .container .form-message form .message-phone #completename, main .container .form-message form .completename #address, main .container .form-message form .completename #number, main .container .form-message form .completename #completename {
+  .container .form-message form .message-email #address, .container .form-message form .message-email #number, .container .form-message form .message-email #completename, .container .form-message form .message-phone #address, .container .form-message form .message-phone #number, .container .form-message form .message-phone #completename, .container .form-message form .completename #address, .container .form-message form .completename #number, .container .form-message form .completename #completename {
     height: 2.5em;
     background-color: rgb(231, 231, 231);
     padding-left: 0.5em;
     width: 100%;
   }
-  main .container .form-message form #number {
+  .container .form-message form #number {
     margin-bottom: 1em;
   }
-  main .container .form-message form #doclabel {
+  .container .form-message form #doclabel {
     text-align: left;
     margin-bottom: 0.5em;
   }
-  main .container .form-message form p {
+  .container .form-message form p {
     margin-bottom: 0.5em;
   }
-  main .container .form-message form img {
+  .container .form-message form img {
     margin-bottom: 2em;
-    margin-top: 2em;
     width: 100%;
     height: auto;
   }
-  main .container .form-message form input[type=file] {
+  .container .form-message form input[type=file] {
     margin-bottom: 2em;
   }
-  main .container .form-message form button {
+  .container .form-message form button {
     align-self: center;
     background-color: #5ce1e6;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-    color: #000000;
-    font-weight: 600;
+    color: #ffffff;
     padding: 0.6em 1em;
     transition: background-color 0.3s ease;
     width: 9em;
@@ -790,209 +846,70 @@ h4 {
   }
 }
 @media screen and (max-width: 450px) {
-  main {
-    display: flex;
-    flex-direction: column;
+  h2 {
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    color: #333;
+    font-size: x-large;
   }
-  main .container {
+  .form-container {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
-    padding-bottom: 5em;
-    width: auto;
+    align-items: center;
+    width: 100%;
     height: 100vh;
-    overflow: auto;
-  }
-  main .container .faq img {
-    width: 100%;
-    height: auto;
-  }
-  main .container .faq h1 {
-    margin-bottom: 2em;
-    margin-top: 2em;
-  }
-  main .container .faq-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 0em 2em;
-  }
-  main .container .faq-1 p {
-    text-align: center;
-    text-align: justify;
-  }
-  main .container #rules {
-    text-decoration: underline;
-  }
-}
-@media screen and (max-width: 450px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  main .container {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    padding-bottom: 5em;
-  }
-  main .container .steps {
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-    width: 100%;
-  }
-  main .container .steps .stepsA {
-    display: flex;
-    flex-direction: row;
-    padding: 0.5em 0.5em;
-    width: 100%;
-    height: auto;
-    align-items: center; /* Vertical centering */
-    background-color: #FF66C4;
-  }
-  main .container .steps .stepsA .step1 {
-    display: flex;
-    width: 45%;
-    text-align: center;
-    padding: 0em 0.08em;
-  }
-  main .container .steps .stepsA .step2, main .container .steps .stepsA .step3, main .container .steps .stepsA .step4 {
-    display: flex;
-    width: 25%;
-    text-align: center;
-    padding: 0em 0.04em;
-  }
-  main .container .form-message {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0em 1em;
-    width: 100%;
-    height: auto;
-  }
-  main .container .form-message form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  main .container .form-message form .message-email, main .container .form-message form .message-phone, main .container .form-message form .completename {
-    width: 100%;
-    height: auto;
-    text-align: left;
-    margin-bottom: 1.5em;
-  }
-  main .container .form-message form .message-email label, main .container .form-message form .message-phone label, main .container .form-message form .completename label {
-    font-size: 1.5rem;
-  }
-  main .container .form-message form .message-email #address, main .container .form-message form .message-email #number, main .container .form-message form .message-email #completename, main .container .form-message form .message-phone #address, main .container .form-message form .message-phone #number, main .container .form-message form .message-phone #completename, main .container .form-message form .completename #address, main .container .form-message form .completename #number, main .container .form-message form .completename #completename {
-    height: 2.5em;
-    background-color: rgb(231, 231, 231);
-    padding-left: 0.5em;
-    width: 100%;
-  }
-  main .container .form-message form #number {
-    margin-bottom: 1em;
-  }
-  main .container .form-message form #doclabel {
-    text-align: left;
-    margin-bottom: 0.5em;
-  }
-  main .container .form-message form p {
-    margin-bottom: 0.5em;
-  }
-  main .container .form-message form img {
-    margin-bottom: 2em;
-    width: 100%;
-    height: auto;
-  }
-  main .container .form-message form input[type=file] {
-    margin-bottom: 2em;
-  }
-  main .container .form-message form button {
-    align-self: center;
-    background-color: #5ce1e6;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-    color: #000000;
-    font-weight: 600;
-    padding: 0.6em 1em;
-    transition: background-color 0.3s ease;
-    width: 9em;
-    border-radius: 0.5em;
-    font-size: 1.5rem;
-    margin-right: 0em;
-    text-shadow: 1px 1px 1px rgba(221, 219, 219, 0.5);
-    box-shadow: 0px 2px 4px rgba(161, 165, 161, 0.718);
-    background-color: #F054B0;
-    text-align: center;
-    margin-top: 1.5em;
-  }
-}
-@media screen and (max-width: 450px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  main .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     padding: 1em;
+    background-color: #5CE1E6;
+    margin: auto;
   }
-  main .form-container .form-login {
+  .form-container .form-login {
     background-color: white;
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 350px;
     text-align: center;
   }
-  main .form-container .form-login .login-container h2 {
-    margin-bottom: 1.5em;
-    margin-top: 1em;
-    color: #333;
-  }
-  main .form-container .form-login .login-container form .form-group {
+  .form-container .form-login .login-container form .form-group {
     margin-bottom: 15px;
   }
-  main .form-container .form-login .login-container form .form-group label {
+  .form-container .form-login .login-container form .form-group label {
     display: block;
     margin-bottom: 5px;
     color: #333;
+    font-size: large;
+    text-align: left;
   }
-  main .form-container .form-login .login-container form .form-group input {
+  .form-container .form-login .login-container form .form-group input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: large;
   }
-  main .form-container .form-login .login-container form .login-btn {
+  .form-container .form-login .login-container form .login-btn {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #FF66C4;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: large;
   }
-  main .form-container .form-login .login-container form .login-btn:hover {
-    background-color: #218838;
+  .form-container .form-login .login-container form .login-btn:hover {
+    background-color: #fa12a1;
   }
-  main .form-container .form-login .login-container p {
+  .form-container .form-login .login-container p {
     margin-top: 20px;
     font-size: 14px;
     color: #333;
   }
-  main .form-container .form-login .login-container p a {
+  .form-container .form-login .login-container p a {
     color: #007bff;
     text-decoration: none;
   }
-  main .form-container .form-login .login-container p a:hover {
+  .form-container .form-login .login-container p a:hover {
     color: #0056b3;
   }
 }/*# sourceMappingURL=style.css.map */

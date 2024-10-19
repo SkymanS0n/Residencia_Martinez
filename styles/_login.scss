@@ -1,84 +1,89 @@
 @media screen and (max-width:450px) {
+    
     $background-color: #f4f4f4;
     $container-bg-color: white;
-    $button-bg-color: #28a745;
-    $button-hover-color: #218838;
+    $button-bg-color: #FF66C4;
+    $button-hover-color: #fa12a1;
     $border-color: #ccc;
     $text-color: #333;
     $link-color: #007bff;
     $link-hover-color: #0056b3;
-    
-    main {
+
+    h2 {
+        margin-bottom: 1.5em;
+        margin-top: 1em;
+        color: $text-color;
+        font-size: x-large;
+    }
+
+    .form-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        padding: 1em;
+        background-color: #5CE1E6;
+        margin: auto;
 
-        .form-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            padding: 1em;
+        .form-login {
+            background-color: $container-bg-color;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
 
-            .form-login {
-                background-color: $container-bg-color;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                width: 350px;
-                text-align: center;
-              
-                .login-container {
-                    h2 {
-                        margin-bottom: 1.5em;
-                        margin-top: 1em;
-                        color: $text-color;
-                    }
-              
-                    form {
-                        .form-group {
-                        margin-bottom: 15px;
-                
-                            label {
-                                display: block;
-                                margin-bottom: 5px;
-                                color: $text-color;
-                            }
-                    
-                            input {
-                                width: 100%;
-                                padding: 10px;
-                                border: 1px solid $border-color;
-                                border-radius: 4px;
-                            }
+            .login-container {
+            
+                form {
+                    .form-group {
+                    margin-bottom: 15px;
+            
+                        label {
+                            display: block;
+                            margin-bottom: 5px;
+                            color: $text-color;
+                            font-size: large;
+                            text-align: left;
                         }
-              
-                        .login-btn {
+                
+                        input {
                             width: 100%;
                             padding: 10px;
-                            background-color: $button-bg-color;
-                            color: white;
-                            border: none;
+                            border: 1px solid $border-color;
                             border-radius: 4px;
-                            cursor: pointer;
-                    
-                            &:hover {
-                                background-color: $button-hover-color;
-                            }
+                            font-size: large;
                         }
                     }
-              
-                    p {
-                        margin-top: 20px;
-                        font-size: 14px;
-                        color: $text-color;
+            
+                    .login-btn {
+                        width: 100%;
+                        padding: 10px;
+                        background-color: $button-bg-color;
+                        color: white;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-size: large;
                 
-                        a   {
-                            color: $link-color;
-                            text-decoration: none;
-                
-                            &:hover {
-                                color: $link-hover-color;
-                            }
+                        &:hover {
+                            background-color: $button-hover-color;
+                        }
+                    }
+                }
+            
+                p {
+                    margin-top: 20px;
+                    font-size: 14px;
+                    color: $text-color;
+            
+                    a   {
+                        color: $link-color;
+                        text-decoration: none;
+            
+                        &:hover {
+                            color: $link-hover-color;
                         }
                     }
                 }

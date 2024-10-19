@@ -1,0 +1,10 @@
+@media screen and (max-width:450px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: #5CE1E6;
+        padding: 0em 0.75em;
+        width: 100vw;              // Full viewport width
+        height: 100vh;
+    }
+}
