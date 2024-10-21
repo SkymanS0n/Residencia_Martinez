@@ -522,6 +522,26 @@
                         @include alignCenter;
                         font-weight: bold;
                     }
+
+                    .developer {
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 2rem;
+
+                        a {
+                            width: 5%;
+                            padding: 0rem;
+
+                            img {
+                                
+                                height: auto;
+                                width: 60%;
+                            }
+                        }
+                    }
                 }
             }
         }

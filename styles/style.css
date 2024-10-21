@@ -762,6 +762,22 @@ h4 {
     align-items: center;
     font-weight: bold;
   }
+  .container .features .mobile-footer .legal-regulations .developer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .container .features .mobile-footer .legal-regulations .developer a {
+    width: 5%;
+    padding: 0rem;
+  }
+  .container .features .mobile-footer .legal-regulations .developer a img {
+    height: auto;
+    width: 60%;
+  }
 }
 @media only screen and (min-width: 451px) {
   .tablet-view {
