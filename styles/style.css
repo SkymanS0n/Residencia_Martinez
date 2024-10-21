@@ -179,6 +179,9 @@ h4 {
   }
 }
 @media screen and (max-width: 450px) {
+  .tablet-view {
+    display: none;
+  }
   .container {
     width: 100%;
     height: auto;
@@ -758,6 +761,26 @@ h4 {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+  }
+}
+@media only screen and (min-width: 451px) {
+  .tablet-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+    height: 100vh; /* Full viewport height for vertical centering */
+    margin: 0;
+    padding: 2rem;
+  }
+  .tablet-view h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .container {
+    display: none;
   }
 }
 @media screen and (max-width: 450px) {
