@@ -13,7 +13,6 @@ if (isset($_SESSION["messages"]) && count($_SESSION["messages"]) > 0) {
     unset($_SESSION["messages"]);
 }
 ?>
-?>
 
 <DOCTYPE html>
 <html lang ="en">
