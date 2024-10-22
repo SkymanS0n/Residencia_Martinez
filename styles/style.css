@@ -14,6 +14,7 @@ body, html {
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+  background-color: #5CE1E6;
 }
 
 body {
@@ -962,5 +963,75 @@ h4 {
   }
   .form-container .form-login .login-container p a:hover {
     color: #0056b3;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dash-container h2 {
+    margin-top: 2rem;
+  }
+  .dash-container .dash-details h3 {
+    text-align: left;
+    font-size: medium;
+    margin-left: 1rem;
+  }
+  .dash-container .dash-details .fees {
+    padding: 0rem 0rem 5rem 0rem;
+  }
+  .dash-container .dash-details .fees table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  .dash-container .dash-details .fees table thead tr {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+  }
+  .dash-container .dash-details .fees table thead tr th {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+  }
+  .dash-container .dash-details .fees table tbody tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+  }
+  .dash-container .dash-details .fees table tbody tr td {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    border-right: 1px solid #eee;
+  }
+  .dash-container .dash-details .fees table tbody tr td:last-child {
+    border-right: none;
+  }
+  .dash-container .dash-details .fees table tbody tr td a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .dash-container .dash-details .fees table tbody tr td a:hover {
+    text-decoration: underline;
+  }
+  .dash-container .dash-details button {
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+    box-shadow: 0px 2px 4px rgba(161, 165, 161, 0.718);
+    text-align: center;
+    margin-bottom: 1em;
+    width: 9em;
+    color: white;
+    background-color: #FF66C4;
+  }
+}
+@media only screen and (min-width: 451px) {
+  .dash-container {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
